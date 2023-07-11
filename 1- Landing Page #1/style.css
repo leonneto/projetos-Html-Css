@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 30px;
+    background-color: rgb(241, 239, 212);
+    font-family: 'Poppins', sans-serif;
+    max-width: 1700px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    flex-direction: column;
+    line-height: 30px;
+}
+#info{
+    font-size: 1.1em;
+}
+#info ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 25px;
+}
+#info ul li a{
+    color: black;
+    text-decoration: none;
+}
+#button {
+    border: 3px solid rgb(230, 132, 5);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#button:hover{
+    transition: 0.5s;
+    background: rgb(230, 132, 5);
+    border-color: black;
+    color: white;
+}
+h1{
+    font-weight: 200;
+}
+
+main{
+    margin-top: 50px;
+    flex-direction: row;
+    display: flex;
+}
+
+aside{
+    flex: 40%;
+}
+
+article{
+    flex: 60%;
+}
+
+h2{
+    line-height: 50px;
+    font-size: 56px;
+}
+
+#contrast{
+    color: rgb(230, 132, 5);
+}
+
+p{
+    font-size: 18px;
+    width: 80%;
+    margin: 20px 0px 20px 0px;
+}
+
+input{
+    padding: 20px;
+    width: 40%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#submit{
+    background-color: rgb(230, 132, 5);
+    border-radius: 75px;
+    width: 20%;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+      padding: 10px; 
+    }
+  
+    header {
+      flex-direction: column; 
+      text-align: center; 
+    }
+  
+    #logo {
+      line-height: 30px; 
+    }
+
+    #button{
+        border: none;
+    }
+
+    #button:hover{
+        color: black;
+        background-color: rgba(0, 0, 0, 0);
+    }
+  
+    #info ul li {
+      display: block;
+      margin-right: 0; 
+      margin-bottom: 10px; 
+    }
+  
+    main {
+      flex-direction: column; 
+      margin-top: 20px; 
+    }
+  
+    aside {
+      display: none; 
+    }
+  
+    article {
+      width: 100%;
+    }
+  
+    h2 {
+      font-size: 36px; 
+    }
+  
+    p {
+      font-size: 16px; 
+      width: 100%;
+    }
+  
+    input {
+      width: 100%; 
+    }
+  
+    #submit {
+      width: 50%; 
+    }
+  }
+  
